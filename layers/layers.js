@@ -231,19 +231,19 @@ var group_GENERAL = new ol.layer.Group({
                                 title: 'GENERAL'});
 var group_AFECTACIONES = new ol.layer.Group({
                                 layers: [lyr_DDV_V001_5,lyr_LIMITES_DDV_V1_6,lyr_EXPLORACION_INAH_7,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'AFECTACIONES'});
 var group_AMBIENTAL = new ol.layer.Group({
                                 layers: [lyr_MIA_IRAPUATO_4,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'AMBIENTAL'});
 var group_GEOTECNIA = new ol.layer.Group({
                                 layers: [lyr_SONDEOS_V02_2,lyr_FALLA_CELAYA_3,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'GEOTECNIA'});
 var group_BASEMAP = new ol.layer.Group({
                                 layers: [lyr_OSMStandard_0,lyr_GoogleSatellite_1,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'BASEMAP'});
 
 lyr_OSMStandard_0.setVisible(true);lyr_GoogleSatellite_1.setVisible(true);lyr_SONDEOS_V02_2.setVisible(true);lyr_FALLA_CELAYA_3.setVisible(true);lyr_MIA_IRAPUATO_4.setVisible(true);lyr_DDV_V001_5.setVisible(true);lyr_LIMITES_DDV_V1_6.setVisible(true);lyr_EXPLORACION_INAH_7.setVisible(true);lyr_MUNICIPIOS_PROYECTO_8.setVisible(true);lyr_ENTIDADES_QRO_GTO_9.setVisible(true);lyr_EJE_V1_10.setVisible(true);lyr_CADENAMIENTOS_11.setVisible(true);lyr_ESTACIONES_V1_12.setVisible(true);lyr_PK_V2_13.setVisible(true);lyr_LIMITES_TRAMOS_14.setVisible(true);

@@ -9,7 +9,7 @@ var style_PK_V2_13 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "bold 13px 'Open Sans', sans-serif";
+    var labelFont = "13.0px \'Open Sans\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "#fafafa";
     var bufferWidth = 3.0;

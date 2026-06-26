@@ -4,30 +4,34 @@ function categories_LIMITES_DDV_V1_6(feature, value, size, resolution, labelText
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-    switch(valueStr) {case 'Area afectacion':
-                    return [ new ol.style.Style({
+    switch(valueStr) {
+        case 'Area afectacion':
+            return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(255,255,13,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;
-case 'DDV ACTUAL':
-                    return [ new ol.style.Style({
+			break;
+
+        case 'DDV ACTUAL':
+            return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(84,176,74,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;
-case 'V-TOPO':
-                    return [ new ol.style.Style({
+			break;
+
+        case 'V-TOPO':
+            return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(84,176,74,1.0)', lineDash: [2.508,5.016], lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;}};
+			break;
+    }};
 
 var style_LIMITES_DDV_V1_6 = function(feature, resolution){
     var context = {
@@ -52,8 +56,8 @@ var style_LIMITES_DDV_V1_6 = function(feature, resolution){
     }
     
     var style = categories_LIMITES_DDV_V1_6(feature, value, size, resolution, labelText,
-                            labelFont, labelFill, bufferColor,
-                            bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
+                          labelFont, labelFill, bufferColor,
+                          bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 
     return style;
 };

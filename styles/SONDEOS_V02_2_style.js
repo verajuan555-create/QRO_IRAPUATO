@@ -4,42 +4,47 @@ function categories_SONDEOS_V02_2(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-    switch(valueStr) {case 'TERMINADO':
-                    return [ new ol.style.Style({
+    switch(valueStr) {
+        case 'TERMINADO':
+            return [ new ol.style.Style({
         image: new ol.style.Circle({radius: 8.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(61,128,53,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(84,176,74,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;
-case 'EN PROCESO':
-                    return [ new ol.style.Style({
+			break;
+
+        case 'EN PROCESO':
+            return [ new ol.style.Style({
         image: new ol.style.Circle({radius: 8.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(128,17,25,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(248,147,0,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;
-case 'PROYECTADO':
-                    return [ new ol.style.Style({
+			break;
+
+        case 'PROYECTADO':
+            return [ new ol.style.Style({
         image: new ol.style.Circle({radius: 8.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(50,87,128,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(72,123,182,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;
-case 'INCONCLUSO':
-                    return [ new ol.style.Style({
+			break;
+
+        case 'INCONCLUSO':
+            return [ new ol.style.Style({
         image: new ol.style.Circle({radius: 8.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(128,17,25,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(219,30,42,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;}};
+			break;
+    }};
 
 var style_SONDEOS_V02_2 = function(feature, resolution){
     var context = {
@@ -64,8 +69,8 @@ var style_SONDEOS_V02_2 = function(feature, resolution){
     }
     
     var style = categories_SONDEOS_V02_2(feature, value, size, resolution, labelText,
-                            labelFont, labelFill, bufferColor,
-                            bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
+                          labelFont, labelFill, bufferColor,
+                          bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 
     return style;
 };
