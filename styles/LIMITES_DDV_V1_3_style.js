@@ -2,32 +2,36 @@ var size = 0;
 var placement = 'point';
 function categories_LIMITES_DDV_V1_3(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
-                       placement) {
-                var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-                switch(valueStr) {case 'Area afectacion':
-                    return [ new ol.style.Style({
+                       placement, textAlign, offsetX, offsetY, overflow, repeat) {
+    var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
+    switch(valueStr) {
+        case 'Area afectacion':
+            return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(255,255,13,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
-                              bufferWidth)
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;
-case 'DDV ACTUAL':
-                    return [ new ol.style.Style({
+			break;
+
+        case 'DDV ACTUAL':
+            return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(84,176,74,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
-                              bufferWidth)
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;
-case 'V-TOPO':
-                    return [ new ol.style.Style({
+			break;
+
+        case 'V-TOPO':
+            return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(84,176,74,1.0)', lineDash: [2.508,5.016], lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
-                              bufferWidth)
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
-                    break;}};
+			break;
+    }};
 
 var style_LIMITES_DDV_V1_3 = function(feature, resolution){
     var context = {
@@ -41,17 +45,19 @@ var style_LIMITES_DDV_V1_3 = function(feature, resolution){
     var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
-    var textAlign = "left";
-    var offsetX = 0;
-    var offsetY = 0;
+    var textAlign = 'left';
+    var offsetX = 8;
+    var offsetY = 3;
+    var overflow = false;
+    var repeat = 0;
     var placement = 'line';
     if ("" !== null) {
         labelText = String("");
     }
     
     var style = categories_LIMITES_DDV_V1_3(feature, value, size, resolution, labelText,
-                            labelFont, labelFill, bufferColor,
-                            bufferWidth, placement);
+                          labelFont, labelFill, bufferColor,
+                          bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 
     return style;
 };
