@@ -303,10 +303,29 @@ var lyr_LIMITES_TRAMOS_19 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/LIMITES_TRAMOS_19.png" /> LIMITES_TRAMOS'
             });
+var format_CASETAS_V01_20 = new ol.format.GeoJSON();
+var features_CASETAS_V01_20 = format_CASETAS_V01_20.readFeatures(json_CASETAS_V01_20, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_CASETAS_V01_20 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_CASETAS_V01_20.addFeatures(features_CASETAS_V01_20);
+var lyr_CASETAS_V01_20 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_CASETAS_V01_20, 
+                style: style_CASETAS_V01_20,
+                popuplayertitle: 'CASETAS_V01',
+                interactive: true,
+                title: '<img src="styles/legend/CASETAS_V01_20.png" /> CASETAS_V01'
+            });
 var group_GENERAL = new ol.layer.Group({
-                                layers: [lyr_MUNICIPIOS_PROYECTO_13,lyr_ENTIDADES_QRO_GTO_14,lyr_EJE_V1_15,lyr_CADENAMIENTOS_16,lyr_ESTACIONES_V1_17,lyr_PK_V2_18,lyr_LIMITES_TRAMOS_19,],
+                                layers: [lyr_MUNICIPIOS_PROYECTO_13,lyr_ENTIDADES_QRO_GTO_14,lyr_EJE_V1_15,lyr_CADENAMIENTOS_16,lyr_ESTACIONES_V1_17,lyr_PK_V2_18,lyr_LIMITES_TRAMOS_19,lyr_CASETAS_V01_20,],
                                 fold: 'close',
                                 title: 'GENERAL'});
+var group_BACK = new ol.layer.Group({
+                                layers: [],
+                                fold: 'close',
+                                title: 'BACK'});
 var group_GEOTECNIA = new ol.layer.Group({
                                 layers: [lyr_SONDEOS_V02_11,lyr_FALLA_CELAYA_12,],
                                 fold: 'close',
@@ -332,7 +351,7 @@ var group_BASEMAP = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'BASEMAP'});
 
-lyr_OSMStandard_0.setVisible(true);lyr_GoogleSatellite_1.setVisible(true);lyr_MIA_IRAPUATO_2.setVisible(true);lyr_DDV_002_3.setVisible(true);lyr_LIMITES_DDV_V1_4.setVisible(true);lyr_EXPLORACION_INAH_5.setVisible(true);lyr_E02_EJES_LINE_6.setVisible(true);lyr_E02_EJES_CIMENT_ID_7.setVisible(true);lyr_E02_TRABES_8.setVisible(true);lyr_E02_ZAPATAS_9.setVisible(true);lyr_ENVOLVENTES_ESTACIONES_10.setVisible(true);lyr_SONDEOS_V02_11.setVisible(true);lyr_FALLA_CELAYA_12.setVisible(true);lyr_MUNICIPIOS_PROYECTO_13.setVisible(true);lyr_ENTIDADES_QRO_GTO_14.setVisible(true);lyr_EJE_V1_15.setVisible(true);lyr_CADENAMIENTOS_16.setVisible(true);lyr_ESTACIONES_V1_17.setVisible(true);lyr_PK_V2_18.setVisible(true);lyr_LIMITES_TRAMOS_19.setVisible(true);
+lyr_OSMStandard_0.setVisible(true);lyr_GoogleSatellite_1.setVisible(true);lyr_MIA_IRAPUATO_2.setVisible(true);lyr_DDV_002_3.setVisible(true);lyr_LIMITES_DDV_V1_4.setVisible(true);lyr_EXPLORACION_INAH_5.setVisible(true);lyr_E02_EJES_LINE_6.setVisible(true);lyr_E02_EJES_CIMENT_ID_7.setVisible(true);lyr_E02_TRABES_8.setVisible(true);lyr_E02_ZAPATAS_9.setVisible(true);lyr_ENVOLVENTES_ESTACIONES_10.setVisible(true);lyr_SONDEOS_V02_11.setVisible(true);lyr_FALLA_CELAYA_12.setVisible(true);lyr_MUNICIPIOS_PROYECTO_13.setVisible(true);lyr_ENTIDADES_QRO_GTO_14.setVisible(true);lyr_EJE_V1_15.setVisible(true);lyr_CADENAMIENTOS_16.setVisible(true);lyr_ESTACIONES_V1_17.setVisible(true);lyr_PK_V2_18.setVisible(true);lyr_LIMITES_TRAMOS_19.setVisible(true);lyr_CASETAS_V01_20.setVisible(true);
 var layersList = [group_BASEMAP,group_AMBIENTAL,group_AFECTACIONES,group_E02_APASEO,group_ESTACIONES,group_GEOTECNIA,group_GENERAL];
 lyr_MIA_IRAPUATO_2.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
 lyr_DDV_002_3.set('fieldAliases', {'PROPIETARI': 'PROPIETARI', 'ESTATUS': 'ESTATUS', 'ID_SISGO': 'ID_SISGO', 'ESTACIÓN': 'ESTACIÓN', 'PLANO_DWG': 'PLANO_DWG', 'PLANO_PDF': 'PLANO_PDF', 'CODIGO': 'CODIGO', 'PK_INICIO': 'PK_INICIO', 'PK_FIN': 'PK_FIN', 'SUP_M2': 'SUP_M2', 'SUBTRAMO': 'SUBTRAMO', });
@@ -352,6 +371,7 @@ lyr_CADENAMIENTOS_16.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'Paper
 lyr_ESTACIONES_V1_17.set('fieldAliases', {'ESTACION': 'ESTACION', 'PK': 'PK', 'LOCALIDAD': 'LOCALIDAD', 'MUNICIPIO': 'MUNICIPIO', 'ESTADO': 'ESTADO', 'COORD_X': 'COORD_X', 'COORD_Y': 'COORD_Y', });
 lyr_PK_V2_18.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', 'ANGULO_01': 'ANGULO_01', });
 lyr_LIMITES_TRAMOS_19.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
+lyr_CASETAS_V01_20.set('fieldAliases', {'Name': 'Name', });
 lyr_MIA_IRAPUATO_2.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
 lyr_DDV_002_3.set('fieldImages', {'PROPIETARI': 'TextEdit', 'ESTATUS': 'TextEdit', 'ID_SISGO': 'TextEdit', 'ESTACIÓN': 'TextEdit', 'PLANO_DWG': 'TextEdit', 'PLANO_PDF': 'TextEdit', 'CODIGO': 'TextEdit', 'PK_INICIO': 'TextEdit', 'PK_FIN': 'TextEdit', 'SUP_M2': 'TextEdit', 'SUBTRAMO': 'TextEdit', });
 lyr_LIMITES_DDV_V1_4.set('fieldImages', {'Linetype': 'TextEdit', 'TIPO': 'TextEdit', });
@@ -370,6 +390,7 @@ lyr_CADENAMIENTOS_16.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'Che
 lyr_ESTACIONES_V1_17.set('fieldImages', {'ESTACION': 'TextEdit', 'PK': 'TextEdit', 'LOCALIDAD': 'TextEdit', 'MUNICIPIO': 'TextEdit', 'ESTADO': 'TextEdit', 'COORD_X': 'TextEdit', 'COORD_Y': 'TextEdit', });
 lyr_PK_V2_18.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', 'ANGULO_01': 'TextEdit', });
 lyr_LIMITES_TRAMOS_19.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
+lyr_CASETAS_V01_20.set('fieldImages', {'Name': 'TextEdit', });
 lyr_MIA_IRAPUATO_2.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_DDV_002_3.set('fieldLabels', {'PROPIETARI': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', 'ID_SISGO': 'inline label - always visible', 'ESTACIÓN': 'inline label - always visible', 'PLANO_DWG': 'inline label - always visible', 'PLANO_PDF': 'inline label - always visible', 'CODIGO': 'inline label - always visible', 'PK_INICIO': 'inline label - always visible', 'PK_FIN': 'inline label - always visible', 'SUP_M2': 'inline label - always visible', 'SUBTRAMO': 'inline label - always visible', });
 lyr_LIMITES_DDV_V1_4.set('fieldLabels', {'Linetype': 'no label', 'TIPO': 'no label', });
@@ -388,6 +409,7 @@ lyr_CADENAMIENTOS_16.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no 
 lyr_ESTACIONES_V1_17.set('fieldLabels', {'ESTACION': 'inline label - always visible', 'PK': 'no label', 'LOCALIDAD': 'no label', 'MUNICIPIO': 'no label', 'ESTADO': 'no label', 'COORD_X': 'no label', 'COORD_Y': 'no label', });
 lyr_PK_V2_18.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'header label - visible with data', 'ANGULO_01': 'no label', });
 lyr_LIMITES_TRAMOS_19.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_LIMITES_TRAMOS_19.on('precompose', function(evt) {
+lyr_CASETAS_V01_20.set('fieldLabels', {'Name': 'no label', });
+lyr_CASETAS_V01_20.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
