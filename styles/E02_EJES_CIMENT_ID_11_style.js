@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_E02_ZAPATAS_9 = function(feature, resolution){
+var style_E02_EJES_CIMENT_ID_11 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -19,11 +19,12 @@ var style_E02_ZAPATAS_9 = function(feature, resolution){
     var overflow = false;
     var repeat = 0;
     var placement = 'point';
-    if (feature.get("Layer") !== null) {
-        labelText = String(feature.get("Layer"));
+    if (feature.get("Text") !== null) {
+        labelText = String(feature.get("Text"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.748}),fill: new ol.style.Fill({color: 'rgba(227,26,28,0.5019607843137255)'}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(50,87,128,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(168,183,224,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
