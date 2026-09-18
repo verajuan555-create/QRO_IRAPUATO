@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_E02_ZAPATAS_13 = function(feature, resolution){
+var style_E03_ZAPATAS_9 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,7 +9,7 @@ var style_E02_ZAPATAS_13 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "13.0px \'Open Sans\', sans-serif";
+    var labelFont = "7.800000000000001px \'Open Sans\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "#fafafa";
     var bufferWidth = 3.0;
