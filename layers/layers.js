@@ -92,65 +92,65 @@ var lyr_EXPLORACION_INAH_5 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/EXPLORACION_INAH_5.png" /> EXPLORACION_INAH'
             });
-var format_E02_EJES_LINE_6 = new ol.format.GeoJSON();
-var features_E02_EJES_LINE_6 = format_E02_EJES_LINE_6.readFeatures(json_E02_EJES_LINE_6, 
+var format_E03_EJES_6 = new ol.format.GeoJSON();
+var features_E03_EJES_6 = format_E03_EJES_6.readFeatures(json_E03_EJES_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_E02_EJES_LINE_6 = new ol.source.Vector({
+var jsonSource_E03_EJES_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_E02_EJES_LINE_6.addFeatures(features_E02_EJES_LINE_6);
-var lyr_E02_EJES_LINE_6 = new ol.layer.Vector({
+jsonSource_E03_EJES_6.addFeatures(features_E03_EJES_6);
+var lyr_E03_EJES_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_E02_EJES_LINE_6, 
-                style: style_E02_EJES_LINE_6,
-                popuplayertitle: 'E02_EJES_LINE',
+                source:jsonSource_E03_EJES_6, 
+                style: style_E03_EJES_6,
+                popuplayertitle: 'E03_EJES',
                 interactive: true,
-                title: '<img src="styles/legend/E02_EJES_LINE_6.png" /> E02_EJES_LINE'
+                title: '<img src="styles/legend/E03_EJES_6.png" /> E03_EJES'
             });
-var format_E02_EJES_TXT_7 = new ol.format.GeoJSON();
-var features_E02_EJES_TXT_7 = format_E02_EJES_TXT_7.readFeatures(json_E02_EJES_TXT_7, 
+var format_E03_EJES_L_7 = new ol.format.GeoJSON();
+var features_E03_EJES_L_7 = format_E03_EJES_L_7.readFeatures(json_E03_EJES_L_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_E02_EJES_TXT_7 = new ol.source.Vector({
+var jsonSource_E03_EJES_L_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_E02_EJES_TXT_7.addFeatures(features_E02_EJES_TXT_7);
-var lyr_E02_EJES_TXT_7 = new ol.layer.Vector({
+jsonSource_E03_EJES_L_7.addFeatures(features_E03_EJES_L_7);
+var lyr_E03_EJES_L_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_E02_EJES_TXT_7, 
-                style: style_E02_EJES_TXT_7,
-                popuplayertitle: 'E02_EJES_TXT',
+                source:jsonSource_E03_EJES_L_7, 
+                style: style_E03_EJES_L_7,
+                popuplayertitle: 'E03_EJES_L',
                 interactive: true,
-                title: '<img src="styles/legend/E02_EJES_TXT_7.png" /> E02_EJES_TXT'
+                title: '<img src="styles/legend/E03_EJES_L_7.png" /> E03_EJES_L'
             });
-var format_E02_TRABES_8 = new ol.format.GeoJSON();
-var features_E02_TRABES_8 = format_E02_TRABES_8.readFeatures(json_E02_TRABES_8, 
+var format_E03_TRABES_8 = new ol.format.GeoJSON();
+var features_E03_TRABES_8 = format_E03_TRABES_8.readFeatures(json_E03_TRABES_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_E02_TRABES_8 = new ol.source.Vector({
+var jsonSource_E03_TRABES_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_E02_TRABES_8.addFeatures(features_E02_TRABES_8);
-var lyr_E02_TRABES_8 = new ol.layer.Vector({
+jsonSource_E03_TRABES_8.addFeatures(features_E03_TRABES_8);
+var lyr_E03_TRABES_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_E02_TRABES_8, 
-                style: style_E02_TRABES_8,
-                popuplayertitle: 'E02_TRABES',
+                source:jsonSource_E03_TRABES_8, 
+                style: style_E03_TRABES_8,
+                popuplayertitle: 'E03_TRABES',
                 interactive: true,
-                title: '<img src="styles/legend/E02_TRABES_8.png" /> E02_TRABES'
+                title: '<img src="styles/legend/E03_TRABES_8.png" /> E03_TRABES'
             });
-var format_E02_ZAPATAS_9 = new ol.format.GeoJSON();
-var features_E02_ZAPATAS_9 = format_E02_ZAPATAS_9.readFeatures(json_E02_ZAPATAS_9, 
+var format_E03_ZAPATAS_9 = new ol.format.GeoJSON();
+var features_E03_ZAPATAS_9 = format_E03_ZAPATAS_9.readFeatures(json_E03_ZAPATAS_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_E02_ZAPATAS_9 = new ol.source.Vector({
+var jsonSource_E03_ZAPATAS_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_E02_ZAPATAS_9.addFeatures(features_E02_ZAPATAS_9);
-var lyr_E02_ZAPATAS_9 = new ol.layer.Vector({
+jsonSource_E03_ZAPATAS_9.addFeatures(features_E03_ZAPATAS_9);
+var lyr_E03_ZAPATAS_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_E02_ZAPATAS_9, 
-                style: style_E02_ZAPATAS_9,
-                popuplayertitle: 'E02_ZAPATAS',
+                source:jsonSource_E03_ZAPATAS_9, 
+                style: style_E03_ZAPATAS_9,
+                popuplayertitle: 'E03_ZAPATAS',
                 interactive: true,
-                title: '<img src="styles/legend/E02_ZAPATAS_9.png" /> E02_ZAPATAS'
+                title: '<img src="styles/legend/E03_ZAPATAS_9.png" /> E03_ZAPATAS'
             });
 var format_E02_EJES_LINE_10 = new ol.format.GeoJSON();
 var features_E02_EJES_LINE_10 = format_E02_EJES_LINE_10.readFeatures(json_E02_EJES_LINE_10, 
@@ -167,20 +167,20 @@ var lyr_E02_EJES_LINE_10 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/E02_EJES_LINE_10.png" /> E02_EJES_LINE'
             });
-var format_E02_EJES_CIMENT_ID_11 = new ol.format.GeoJSON();
-var features_E02_EJES_CIMENT_ID_11 = format_E02_EJES_CIMENT_ID_11.readFeatures(json_E02_EJES_CIMENT_ID_11, 
+var format_E02_EJES_TXT_11 = new ol.format.GeoJSON();
+var features_E02_EJES_TXT_11 = format_E02_EJES_TXT_11.readFeatures(json_E02_EJES_TXT_11, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_E02_EJES_CIMENT_ID_11 = new ol.source.Vector({
+var jsonSource_E02_EJES_TXT_11 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_E02_EJES_CIMENT_ID_11.addFeatures(features_E02_EJES_CIMENT_ID_11);
-var lyr_E02_EJES_CIMENT_ID_11 = new ol.layer.Vector({
+jsonSource_E02_EJES_TXT_11.addFeatures(features_E02_EJES_TXT_11);
+var lyr_E02_EJES_TXT_11 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_E02_EJES_CIMENT_ID_11, 
-                style: style_E02_EJES_CIMENT_ID_11,
-                popuplayertitle: 'E02_EJES_CIMENT_ID',
+                source:jsonSource_E02_EJES_TXT_11, 
+                style: style_E02_EJES_TXT_11,
+                popuplayertitle: 'E02_EJES_TXT',
                 interactive: true,
-                title: '<img src="styles/legend/E02_EJES_CIMENT_ID_11.png" /> E02_EJES_CIMENT_ID'
+                title: '<img src="styles/legend/E02_EJES_TXT_11.png" /> E02_EJES_TXT'
             });
 var format_E02_TRABES_12 = new ol.format.GeoJSON();
 var features_E02_TRABES_12 = format_E02_TRABES_12.readFeatures(json_E02_TRABES_12, 
@@ -210,10 +210,8 @@ var lyr_E02_ZAPATAS_13 = new ol.layer.Vector({
                 style: style_E02_ZAPATAS_13,
                 popuplayertitle: 'E02_ZAPATAS',
                 interactive: true,
-    title: 'E02_ZAPATAS<br />\
-    <img src="styles/legend/E02_ZAPATAS_13_0.png" /> ZC-1<br />\
-    <img src="styles/legend/E02_ZAPATAS_13_1.png" /> ZC-2<br />\
-    <img src="styles/legend/E02_ZAPATAS_13_2.png" /> ZC-3<br />' });
+                title: '<img src="styles/legend/E02_ZAPATAS_13.png" /> E02_ZAPATAS'
+            });
 var format_ENVOLVENTES_ESTACIONES_14 = new ol.format.GeoJSON();
 var features_ENVOLVENTES_ESTACIONES_14 = format_ENVOLVENTES_ESTACIONES_14.readFeatures(json_ENVOLVENTES_ESTACIONES_14, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -378,13 +376,17 @@ var group_ESTACIONES = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'ESTACIONES'});
 var group_E02_V01_CIMENT_APASEO = new ol.layer.Group({
-                                layers: [lyr_E02_EJES_LINE_10,lyr_E02_EJES_CIMENT_ID_11,lyr_E02_TRABES_12,lyr_E02_ZAPATAS_13,],
+                                layers: [],
                                 fold: 'close',
                                 title: 'E02_V01_CIMENT_APASEO'});
 var group_E02_V02_CIMENT_APASEO = new ol.layer.Group({
-                                layers: [lyr_E02_EJES_LINE_6,lyr_E02_EJES_TXT_7,lyr_E02_TRABES_8,lyr_E02_ZAPATAS_9,],
+                                layers: [lyr_E02_EJES_LINE_10,lyr_E02_EJES_TXT_11,lyr_E02_TRABES_12,lyr_E02_ZAPATAS_13,],
                                 fold: 'close',
                                 title: 'E02_V02_CIMENT_APASEO'});
+var group_E03_CELAYA = new ol.layer.Group({
+                                layers: [lyr_E03_EJES_6,lyr_E03_EJES_L_7,lyr_E03_TRABES_8,lyr_E03_ZAPATAS_9,],
+                                fold: 'close',
+                                title: 'E03_CELAYA'});
 var group_AFECTACIONES = new ol.layer.Group({
                                 layers: [lyr_DDV_002_3,lyr_LIMITES_DDV_V1_4,lyr_EXPLORACION_INAH_5,],
                                 fold: 'close',
@@ -402,21 +404,21 @@ var group_BASEMAP = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'BASEMAP'});
 
-lyr_GoogleSatellite_0.setVisible(true);lyr_CASETAS_V01_1.setVisible(true);lyr_MIA_IRAPUATO_2.setVisible(true);lyr_DDV_002_3.setVisible(true);lyr_LIMITES_DDV_V1_4.setVisible(true);lyr_EXPLORACION_INAH_5.setVisible(true);lyr_E02_EJES_LINE_6.setVisible(true);lyr_E02_EJES_TXT_7.setVisible(true);lyr_E02_TRABES_8.setVisible(true);lyr_E02_ZAPATAS_9.setVisible(true);lyr_E02_EJES_LINE_10.setVisible(true);lyr_E02_EJES_CIMENT_ID_11.setVisible(true);lyr_E02_TRABES_12.setVisible(true);lyr_E02_ZAPATAS_13.setVisible(true);lyr_ENVOLVENTES_ESTACIONES_14.setVisible(true);lyr_SONDEOS_V02_15.setVisible(true);lyr_FALLA_CELAYA_16.setVisible(true);lyr_MUNICIPIOS_PROYECTO_17.setVisible(true);lyr_ENTIDADES_QRO_GTO_18.setVisible(true);lyr_EJE_V1_19.setVisible(true);lyr_CADENAMIENTOS_20.setVisible(true);lyr_ESTACIONES_V1_21.setVisible(true);lyr_PK_V2_22.setVisible(true);lyr_LIMITES_TRAMOS_23.setVisible(true);
-var layersList = [group_BASEMAP,group_OBRA_ELECTROMECANICA,group_AMBIENTAL,group_AFECTACIONES,group_E02_V02_CIMENT_APASEO,group_E02_V01_CIMENT_APASEO,group_ESTACIONES,group_GEOTECNIA,group_GENERAL];
+lyr_GoogleSatellite_0.setVisible(true);lyr_CASETAS_V01_1.setVisible(true);lyr_MIA_IRAPUATO_2.setVisible(true);lyr_DDV_002_3.setVisible(true);lyr_LIMITES_DDV_V1_4.setVisible(true);lyr_EXPLORACION_INAH_5.setVisible(true);lyr_E03_EJES_6.setVisible(true);lyr_E03_EJES_L_7.setVisible(true);lyr_E03_TRABES_8.setVisible(true);lyr_E03_ZAPATAS_9.setVisible(true);lyr_E02_EJES_LINE_10.setVisible(true);lyr_E02_EJES_TXT_11.setVisible(true);lyr_E02_TRABES_12.setVisible(true);lyr_E02_ZAPATAS_13.setVisible(true);lyr_ENVOLVENTES_ESTACIONES_14.setVisible(true);lyr_SONDEOS_V02_15.setVisible(true);lyr_FALLA_CELAYA_16.setVisible(true);lyr_MUNICIPIOS_PROYECTO_17.setVisible(true);lyr_ENTIDADES_QRO_GTO_18.setVisible(true);lyr_EJE_V1_19.setVisible(true);lyr_CADENAMIENTOS_20.setVisible(true);lyr_ESTACIONES_V1_21.setVisible(true);lyr_PK_V2_22.setVisible(true);lyr_LIMITES_TRAMOS_23.setVisible(true);
+var layersList = [group_BASEMAP,group_OBRA_ELECTROMECANICA,group_AMBIENTAL,group_AFECTACIONES,group_E03_CELAYA,group_E02_V02_CIMENT_APASEO,group_ESTACIONES,group_GEOTECNIA,group_GENERAL];
 lyr_CASETAS_V01_1.set('fieldAliases', {'Name': 'Name', });
 lyr_MIA_IRAPUATO_2.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
 lyr_DDV_002_3.set('fieldAliases', {'PROPIETARI': 'PROPIETARI', 'ESTATUS': 'ESTATUS', 'ID_SISGO': 'ID_SISGO', 'ESTACIÓN': 'ESTACIÓN', 'PLANO_DWG': 'PLANO_DWG', 'PLANO_PDF': 'PLANO_PDF', 'CODIGO': 'CODIGO', 'PK_INICIO': 'PK_INICIO', 'PK_FIN': 'PK_FIN', 'SUP_M2': 'SUP_M2', 'SUBTRAMO': 'SUBTRAMO', });
 lyr_LIMITES_DDV_V1_4.set('fieldAliases', {'Linetype': 'Linetype', 'TIPO': 'TIPO', });
 lyr_EXPLORACION_INAH_5.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
-lyr_E02_EJES_LINE_6.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
-lyr_E02_EJES_TXT_7.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
-lyr_E02_TRABES_8.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
-lyr_E02_ZAPATAS_9.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
+lyr_E03_EJES_6.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
+lyr_E03_EJES_L_7.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
+lyr_E03_TRABES_8.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
+lyr_E03_ZAPATAS_9.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
 lyr_E02_EJES_LINE_10.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
-lyr_E02_EJES_CIMENT_ID_11.set('fieldAliases', {'Text': 'Text', });
-lyr_E02_TRABES_12.set('fieldAliases', {'Layer': 'Layer', });
-lyr_E02_ZAPATAS_13.set('fieldAliases', {'TIPO': 'TIPO', 'ID': 'ID', 'PK': 'PK', 'SUBTRAMO': 'SUBTRAMO', 'ESTATUS': 'ESTATUS', 'OBSERVACIO': 'OBSERVACIO', 'INI_CONST': 'INI_CONST', 'FIN_CONST': 'FIN_CONST', });
+lyr_E02_EJES_TXT_11.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
+lyr_E02_TRABES_12.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
+lyr_E02_ZAPATAS_13.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
 lyr_ENVOLVENTES_ESTACIONES_14.set('fieldAliases', {'ESTACIÓN': 'ESTACIÓN', 'SISGO_ID': 'SISGO_ID', 'PK_INICIO': 'PK_INICIO', 'PK_FINAL': 'PK_FINAL', });
 lyr_SONDEOS_V02_15.set('fieldAliases', {'UNIDAD PCA': 'UNIDAD PCA', 'TIPO DE SO': 'TIPO DE SO', 'EMPRESA': 'EMPRESA', 'ESTATUS': 'ESTATUS', 'OBSERVACIO': 'OBSERVACIO', 'CODI_LOCAL': 'CODI_LOCAL', 'COORD_X': 'COORD_X', 'COORD_Y': 'COORD_Y', 'UBICACIÓN': 'UBICACIÓN', 'FECHA_INI': 'FECHA_INI', 'FECHA_FIN': 'FECHA_FIN', 'PROFUND': 'PROFUND', 'PK': 'PK', 'ID_SISGO': 'ID_SISGO', 'LINK_EXTER': 'LINK_EXTER', 'LINK_INTER': 'LINK_INTER', });
 lyr_FALLA_CELAYA_16.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
@@ -432,14 +434,14 @@ lyr_MIA_IRAPUATO_2.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'Check
 lyr_DDV_002_3.set('fieldImages', {'PROPIETARI': 'TextEdit', 'ESTATUS': 'TextEdit', 'ID_SISGO': 'TextEdit', 'ESTACIÓN': 'TextEdit', 'PLANO_DWG': 'TextEdit', 'PLANO_PDF': 'TextEdit', 'CODIGO': 'TextEdit', 'PK_INICIO': 'TextEdit', 'PK_FIN': 'TextEdit', 'SUP_M2': 'TextEdit', 'SUBTRAMO': 'TextEdit', });
 lyr_LIMITES_DDV_V1_4.set('fieldImages', {'Linetype': 'TextEdit', 'TIPO': 'TextEdit', });
 lyr_EXPLORACION_INAH_5.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
-lyr_E02_EJES_LINE_6.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
-lyr_E02_EJES_TXT_7.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
-lyr_E02_TRABES_8.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
-lyr_E02_ZAPATAS_9.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
+lyr_E03_EJES_6.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
+lyr_E03_EJES_L_7.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
+lyr_E03_TRABES_8.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
+lyr_E03_ZAPATAS_9.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
 lyr_E02_EJES_LINE_10.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
-lyr_E02_EJES_CIMENT_ID_11.set('fieldImages', {'Text': 'TextEdit', });
-lyr_E02_TRABES_12.set('fieldImages', {'Layer': 'TextEdit', });
-lyr_E02_ZAPATAS_13.set('fieldImages', {'TIPO': 'TextEdit', 'ID': '', 'PK': '', 'SUBTRAMO': '', 'ESTATUS': '', 'OBSERVACIO': '', 'INI_CONST': '', 'FIN_CONST': '', });
+lyr_E02_EJES_TXT_11.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
+lyr_E02_TRABES_12.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
+lyr_E02_ZAPATAS_13.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
 lyr_ENVOLVENTES_ESTACIONES_14.set('fieldImages', {'ESTACIÓN': '', 'SISGO_ID': '', 'PK_INICIO': '', 'PK_FINAL': '', });
 lyr_SONDEOS_V02_15.set('fieldImages', {'UNIDAD PCA': 'CheckBox', 'TIPO DE SO': 'TextEdit', 'EMPRESA': 'TextEdit', 'ESTATUS': 'TextEdit', 'OBSERVACIO': 'TextEdit', 'CODI_LOCAL': 'TextEdit', 'COORD_X': 'TextEdit', 'COORD_Y': 'TextEdit', 'UBICACIÓN': 'TextEdit', 'FECHA_INI': 'TextEdit', 'FECHA_FIN': 'TextEdit', 'PROFUND': 'TextEdit', 'PK': 'TextEdit', 'ID_SISGO': 'TextEdit', 'LINK_EXTER': 'TextEdit', 'LINK_INTER': 'TextEdit', });
 lyr_FALLA_CELAYA_16.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
@@ -455,14 +457,14 @@ lyr_MIA_IRAPUATO_2.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no la
 lyr_DDV_002_3.set('fieldLabels', {'PROPIETARI': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', 'ID_SISGO': 'inline label - always visible', 'ESTACIÓN': 'inline label - always visible', 'PLANO_DWG': 'inline label - always visible', 'PLANO_PDF': 'inline label - always visible', 'CODIGO': 'inline label - always visible', 'PK_INICIO': 'inline label - always visible', 'PK_FIN': 'inline label - always visible', 'SUP_M2': 'inline label - always visible', 'SUBTRAMO': 'inline label - always visible', });
 lyr_LIMITES_DDV_V1_4.set('fieldLabels', {'Linetype': 'no label', 'TIPO': 'no label', });
 lyr_EXPLORACION_INAH_5.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E02_EJES_LINE_6.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E02_EJES_TXT_7.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E02_TRABES_8.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E02_ZAPATAS_9.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
+lyr_E03_EJES_6.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
+lyr_E03_EJES_L_7.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
+lyr_E03_TRABES_8.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
+lyr_E03_ZAPATAS_9.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E02_EJES_LINE_10.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E02_EJES_CIMENT_ID_11.set('fieldLabels', {'Text': 'no label', });
-lyr_E02_TRABES_12.set('fieldLabels', {'Layer': 'no label', });
-lyr_E02_ZAPATAS_13.set('fieldLabels', {'TIPO': 'inline label - always visible', 'ID': 'no label', 'PK': 'no label', 'SUBTRAMO': 'no label', 'ESTATUS': 'no label', 'OBSERVACIO': 'no label', 'INI_CONST': 'no label', 'FIN_CONST': 'no label', });
+lyr_E02_EJES_TXT_11.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
+lyr_E02_TRABES_12.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
+lyr_E02_ZAPATAS_13.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_ENVOLVENTES_ESTACIONES_14.set('fieldLabels', {'ESTACIÓN': 'inline label - always visible', 'SISGO_ID': 'inline label - always visible', 'PK_INICIO': 'inline label - always visible', 'PK_FINAL': 'inline label - always visible', });
 lyr_SONDEOS_V02_15.set('fieldLabels', {'UNIDAD PCA': 'no label', 'TIPO DE SO': 'inline label - always visible', 'EMPRESA': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', 'OBSERVACIO': 'no label', 'CODI_LOCAL': 'inline label - always visible', 'COORD_X': 'inline label - always visible', 'COORD_Y': 'inline label - always visible', 'UBICACIÓN': 'inline label - always visible', 'FECHA_INI': 'no label', 'FECHA_FIN': 'no label', 'PROFUND': 'inline label - always visible', 'PK': 'inline label - always visible', 'ID_SISGO': 'no label', 'LINK_EXTER': 'inline label - always visible', 'LINK_INTER': 'inline label - always visible', });
 lyr_FALLA_CELAYA_16.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
