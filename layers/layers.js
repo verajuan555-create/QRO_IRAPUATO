@@ -381,7 +381,7 @@ var group_GEOTECNIA = new ol.layer.Group({
                                 title: 'GEOTECNIA'});
 var group_ESTACIONES = new ol.layer.Group({
                                 layers: [lyr_ENVOLVENTES_ESTACIONES_14,],
-                                fold: 'close',
+                                fold: 'open',
                                 title: 'ESTACIONES'});
 var group_E02_V01_CIMENT_APASEO = new ol.layer.Group({
                                 layers: [],
@@ -389,7 +389,7 @@ var group_E02_V01_CIMENT_APASEO = new ol.layer.Group({
                                 title: 'E02_V01_CIMENT_APASEO'});
 var group_E02_V02_CIMENT_APASEO = new ol.layer.Group({
                                 layers: [lyr_E02_EJES_LINE_10,lyr_E02_EJES_TXT_11,lyr_E02_TRABES_12,lyr_E02_ZAPATAS_13,],
-                                fold: 'close',
+                                fold: 'open',
                                 title: 'E02_V02_CIMENT_APASEO'});
 var group_E03_CELAYA = new ol.layer.Group({
                                 layers: [lyr_E03_EJES_6,lyr_E03_EJES_L_7,lyr_E03_TRABES_8,lyr_E03_ZAPATAS_9,],
@@ -426,7 +426,7 @@ lyr_E03_ZAPATAS_9.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpa
 lyr_E02_EJES_LINE_10.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
 lyr_E02_EJES_TXT_11.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
 lyr_E02_TRABES_12.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
-lyr_E02_ZAPATAS_13.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', 'ESTATUS': 'ESTATUS', });
+lyr_E02_ZAPATAS_13.set('fieldAliases', {'Layer': 'Layer', 'ESTATUS': 'ESTATUS', });
 lyr_ENVOLVENTES_ESTACIONES_14.set('fieldAliases', {'ESTACIÓN': 'ESTACIÓN', 'SISGO_ID': 'SISGO_ID', 'PK_INICIO': 'PK_INICIO', 'PK_FINAL': 'PK_FINAL', });
 lyr_SONDEOS_V02_15.set('fieldAliases', {'UNIDAD PCA': 'UNIDAD PCA', 'TIPO DE SO': 'TIPO DE SO', 'EMPRESA': 'EMPRESA', 'ESTATUS': 'ESTATUS', 'OBSERVACIO': 'OBSERVACIO', 'CODI_LOCAL': 'CODI_LOCAL', 'COORD_X': 'COORD_X', 'COORD_Y': 'COORD_Y', 'UBICACIÓN': 'UBICACIÓN', 'FECHA_INI': 'FECHA_INI', 'FECHA_FIN': 'FECHA_FIN', 'PROFUND': 'PROFUND', 'PK': 'PK', 'ID_SISGO': 'ID_SISGO', 'LINK_EXTER': 'LINK_EXTER', 'LINK_INTER': 'LINK_INTER', });
 lyr_FALLA_CELAYA_16.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHand': 'EntityHand', 'Text': 'Text', });
@@ -449,7 +449,7 @@ lyr_E03_ZAPATAS_9.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckB
 lyr_E02_EJES_LINE_10.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
 lyr_E02_EJES_TXT_11.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
 lyr_E02_TRABES_12.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
-lyr_E02_ZAPATAS_13.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', 'ESTATUS': 'TextEdit', });
+lyr_E02_ZAPATAS_13.set('fieldImages', {'Layer': 'TextEdit', 'ESTATUS': 'TextEdit', });
 lyr_ENVOLVENTES_ESTACIONES_14.set('fieldImages', {'ESTACIÓN': '', 'SISGO_ID': '', 'PK_INICIO': '', 'PK_FINAL': '', });
 lyr_SONDEOS_V02_15.set('fieldImages', {'UNIDAD PCA': 'CheckBox', 'TIPO DE SO': 'TextEdit', 'EMPRESA': 'TextEdit', 'ESTATUS': 'TextEdit', 'OBSERVACIO': 'TextEdit', 'CODI_LOCAL': 'TextEdit', 'COORD_X': 'TextEdit', 'COORD_Y': 'TextEdit', 'UBICACIÓN': 'TextEdit', 'FECHA_INI': 'TextEdit', 'FECHA_FIN': 'TextEdit', 'PROFUND': 'TextEdit', 'PK': 'TextEdit', 'ID_SISGO': 'TextEdit', 'LINK_EXTER': 'TextEdit', 'LINK_INTER': 'TextEdit', });
 lyr_FALLA_CELAYA_16.set('fieldImages', {'Layer': 'TextEdit', 'PaperSpace': 'CheckBox', 'SubClasses': 'TextEdit', 'Linetype': 'TextEdit', 'EntityHand': 'TextEdit', 'Text': 'TextEdit', });
@@ -472,7 +472,7 @@ lyr_E03_ZAPATAS_9.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no lab
 lyr_E02_EJES_LINE_10.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E02_EJES_TXT_11.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E02_TRABES_12.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E02_ZAPATAS_13.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', 'ESTATUS': 'no label', });
+lyr_E02_ZAPATAS_13.set('fieldLabels', {'Layer': 'no label', 'ESTATUS': 'no label', });
 lyr_ENVOLVENTES_ESTACIONES_14.set('fieldLabels', {'ESTACIÓN': 'inline label - always visible', 'SISGO_ID': 'inline label - always visible', 'PK_INICIO': 'inline label - always visible', 'PK_FINAL': 'inline label - always visible', });
 lyr_SONDEOS_V02_15.set('fieldLabels', {'UNIDAD PCA': 'no label', 'TIPO DE SO': 'inline label - always visible', 'EMPRESA': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', 'OBSERVACIO': 'no label', 'CODI_LOCAL': 'inline label - always visible', 'COORD_X': 'inline label - always visible', 'COORD_Y': 'inline label - always visible', 'UBICACIÓN': 'inline label - always visible', 'FECHA_INI': 'no label', 'FECHA_FIN': 'no label', 'PROFUND': 'inline label - always visible', 'PK': 'inline label - always visible', 'ID_SISGO': 'no label', 'LINK_EXTER': 'inline label - always visible', 'LINK_INTER': 'inline label - always visible', });
 lyr_FALLA_CELAYA_16.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
