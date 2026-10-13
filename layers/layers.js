@@ -392,10 +392,6 @@ var group_ESTACIONES = new ol.layer.Group({
                                 layers: [lyr_ENVOLVENTES_ESTACIONES_13,],
                                 fold: 'close',
                                 title: 'ESTACIONES'});
-var group_E02_V01_CIMENT_APASEO = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'E02_V01_CIMENT_APASEO'});
 var group_E02_V02_CIMENT_APASEO = new ol.layer.Group({
                                 layers: [lyr_E02_EJES_LINE_9,lyr_E02_EJES_TXT_10,lyr_E02_TRABES_11,lyr_E02_ZAPATAS_12,],
                                 fold: 'close',
@@ -473,12 +469,12 @@ lyr_DDV_002_3.set('fieldLabels', {'PROPIETARI': 'inline label - always visible',
 lyr_LIMITES_DDV_V1_4.set('fieldLabels', {'Linetype': 'no label', 'TIPO': 'no label', });
 lyr_E03_EJES_5.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E03_EJES_L_6.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E03_TRABES_7.set('fieldLabels', {'Layer': 'no label', 'ESTATUS': 'no label', });
-lyr_E03_ZAPATAS_8.set('fieldLabels', {'Layer': 'no label', 'ESTATUS': 'no label', });
+lyr_E03_TRABES_7.set('fieldLabels', {'Layer': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', });
+lyr_E03_ZAPATAS_8.set('fieldLabels', {'Layer': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', });
 lyr_E02_EJES_LINE_9.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E02_EJES_TXT_10.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
-lyr_E02_TRABES_11.set('fieldLabels', {'Layer': 'no label', 'ESTATUS': 'no label', });
-lyr_E02_ZAPATAS_12.set('fieldLabels', {'Layer': 'no label', 'ESTATUS': 'no label', });
+lyr_E02_TRABES_11.set('fieldLabels', {'Layer': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', });
+lyr_E02_ZAPATAS_12.set('fieldLabels', {'Layer': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', });
 lyr_ENVOLVENTES_ESTACIONES_13.set('fieldLabels', {'ESTACIÓN': 'inline label - always visible', 'SISGO_ID': 'inline label - always visible', 'PK_INICIO': 'inline label - always visible', 'PK_FINAL': 'inline label - always visible', });
 lyr_SONDEOS_V02_14.set('fieldLabels', {'UNIDAD PCA': 'no label', 'TIPO DE SO': 'inline label - always visible', 'EMPRESA': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', 'OBSERVACIO': 'no label', 'CODI_LOCAL': 'inline label - always visible', 'COORD_X': 'inline label - always visible', 'COORD_Y': 'inline label - always visible', 'UBICACIÓN': 'inline label - always visible', 'FECHA_INI': 'no label', 'FECHA_FIN': 'no label', 'PROFUND': 'inline label - always visible', 'PK': 'inline label - always visible', 'ID_SISGO': 'no label', 'LINK_EXTER': 'inline label - always visible', 'LINK_INTER': 'inline label - always visible', });
 lyr_FALLA_CELAYA_15.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
