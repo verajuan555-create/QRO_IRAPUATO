@@ -16,7 +16,7 @@ function categories_E02_VIAS_V1_15(feature, value, size, resolution, labelText,
 
         case 'PRY-Proyecto':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(90,72,222,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
+        stroke: new ol.style.Stroke({color: 'rgba(23,94,243,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
