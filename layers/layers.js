@@ -439,10 +439,6 @@ var group_GEOTECNIA = new ol.layer.Group({
                                 layers: [lyr_SONDEOS_V02_17,lyr_FALLA_CELAYA_18,],
                                 fold: 'close',
                                 title: 'GEOTECNIA'});
-var group_E02_V01_CIMENT_APASEO = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'E02_V01_CIMENT_APASEO'});
 var group_E02_APASEO = new ol.layer.Group({
                                 layers: [lyr_E02_EJES_LINE_10,lyr_E02_EJES_TXT_11,lyr_E02_TRABES_12,lyr_E02_ZAPATAS_13,lyr_E02_CUBIERTAS_14,lyr_E02_VIAS_V1_15,lyr_RIELES_16,],
                                 fold: 'close',
@@ -465,7 +461,7 @@ var group_OBRA_ELECTROMECANICA = new ol.layer.Group({
                                 title: 'OBRA_ELECTROMECANICA'});
 var group_ORTOFOTOS = new ol.layer.Group({
                                 layers: [lyr_ORTOFOTO_APASEO_1,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'ORTOFOTOS'});
 var group_BASEMAP = new ol.layer.Group({
                                 layers: [lyr_GoogleSatellite_0,],
