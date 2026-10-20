@@ -9,7 +9,7 @@ var style_E02_EJES_TXT_11 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "13.0px \'Open Sans\', sans-serif";
+    var labelFont = "14.3px \'Open Sans\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "#fafafa";
     var bufferWidth = 3.0;
