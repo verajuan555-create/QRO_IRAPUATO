@@ -19,8 +19,8 @@ var style_E03_EJES_7 = function(feature, resolution){
     var overflow = false;
     var repeat = 0;
     var placement = 'point';
-    if (feature.get("Text") !== null) {
-        labelText = String(feature.get("Text"));
+    if (feature.get("EJE") !== null) {
+        labelText = String(feature.get("EJE"));
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 8.0 + size,
