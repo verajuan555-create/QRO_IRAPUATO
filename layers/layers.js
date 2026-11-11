@@ -616,7 +616,7 @@ lyr_E05_VIAS_8.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label'
 lyr_E05_ARQUITECTURA_9.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E03_EJES_L_10.set('fieldLabels', {'EJE': 'no label', });
 lyr_E03_EJES_11.set('fieldLabels', {'EJE': 'no label', });
-lyr_E03_ZAPATAS_12.set('fieldLabels', {'ID': 'no label', 'SUBTRAMO': 'no label', 'PK': 'no label', 'FECHA_EJEC': 'no label', 'ESTATUS': 'inline label - always visible', 'OBSERV': 'no label', 'EJE_X': 'no label', 'EJE_Y': 'no label', });
+lyr_E03_ZAPATAS_12.set('fieldLabels', {'ID': 'inline label - always visible', 'SUBTRAMO': 'inline label - always visible', 'PK': 'inline label - always visible', 'FECHA_EJEC': 'no label', 'ESTATUS': 'inline label - always visible', 'OBSERV': 'no label', 'EJE_X': 'inline label - always visible', 'EJE_Y': 'inline label - always visible', });
 lyr_E03_TRABES_13.set('fieldLabels', {'ID_SISGO': 'no label', 'SUBTRAMO': 'no label', 'PK': 'no label', 'FECHA_EJEC': 'no label', 'ESTATUS': 'inline label - always visible', 'OBSERV': 'no label', 'EJE_X': 'no label', 'EJE_Y': 'no label', });
 lyr_E03_DADOS_14.set('fieldLabels', {'ID': 'inline label - always visible', 'SUBTRAMO': 'inline label - always visible', 'PK': 'inline label - always visible', 'FECHA_EJEC': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', 'OBSERV': 'no label', 'EJE_X': 'inline label - always visible', 'EJE_Y': 'inline label - always visible', });
 lyr_E02_CUBIERTAS_15.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
