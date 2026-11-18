@@ -629,7 +629,7 @@ lyr_FALLA_CELAYA_4.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no la
 lyr_MIA_IRAPUATO_5.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_DDV_002_6.set('fieldLabels', {'PROPIETARI': 'inline label - always visible', 'ESTATUS': 'inline label - always visible', 'ID_SISGO': 'inline label - always visible', 'ESTACIÓN': 'inline label - always visible', 'PLANO_DWG': 'inline label - always visible', 'PLANO_PDF': 'inline label - always visible', 'CODIGO': 'inline label - always visible', 'PK_INICIO': 'inline label - always visible', 'PK_FIN': 'inline label - always visible', 'SUP_M2': 'inline label - always visible', 'SUBTRAMO': 'inline label - always visible', });
 lyr_PRED_03_7.set('fieldLabels', {});
-lyr_LIMITES_DDV_V1_8.set('fieldLabels', {'Linetype': 'no label', 'TIPO': 'no label', });
+lyr_LIMITES_DDV_V1_8.set('fieldLabels', {'Linetype': 'no label', 'TIPO': 'inline label - always visible', });
 lyr_E05_VIAS_9.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E05_ARQUITECTURA_10.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHand': 'no label', 'Text': 'no label', });
 lyr_E03_EJES_L_11.set('fieldLabels', {'EJE': 'no label', });
